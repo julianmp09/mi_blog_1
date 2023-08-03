@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Para crear tablas se utiliza la etiqueta de table  -->
+    <table style="width: 500px;">
+        <!-- thead nos va a servir para que podamos agrupar elementos que se encuentran en la cabezera de nuestras tablas -->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- tbody nos sirve para poder identificar o agrupar todas las filas que pertenezcan al cuerpo de nuestra tabla -->
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>River</td>
+                <td>El boleto sale 10000 pesos argentinos</td>
+            </tr>
+            <tr>
+                <td>Hola beats</td>
+                <td>El boleto sale 20000 pesos argentinos</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>El valor total de las dos entradas es de 30000 pesos argentinos</td>
+        </tfoot>
+    </table>
+
+    <!-- Lista no ordenadas se utiliza la etiqueta ul -->
+    <ul>
+        <!-- La etiqueta de li es el item de la lista -->
+        <li>Boca</li>
+        <li>River</li>
+        <li>Racing</li>
+    </ul>
+    <!-- La lista ordenas se utiliza la etiqueta ol -->
+    <!-- Por defecto, las listas ordnas se van enumerando de 1 en adelante
+    pero yo puedo colocar el valor que yo desee, utilizando la propiedad value -->
+    <ol>
+        <li>Boca</li>
+        <li>River</li>
+        <li>Racing</li>
+        <!-- Yo puedo a su vez, crear listas anidadas en otras que ademas puedo cambiar los estilos de orden usando la propiedad style -->
+            <ol>
+                <li style="list-style-type: lower-roman">Boca 1</li>
+                <li style="list-style-type: lower-roman">Boca 2</li>
+                <li style="list-style-type: lower-roman">Boca 3</li>
+            </ol>
+    </ol>
+
+<!-- Solo existen en HTML 5 etiquetas para heading las cuales van -->
+<!-- De h1 (Como la principial y en la que solo puede ver una por cada HTML) -->
+<!-- Hasta h6. Va de mas grande a mas pequeño y esto sirve para que el buscador detecte mejor los titulos -->
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercero heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <!-- La etiqueta span nos ayuda a identificar algun texto o alguna etiqueta html dentro de otra etiqueta -->
+    <p>Lorem ipsum dolor sit, <span>consectetur adipisicing elit.</span> Ipsa quae tempora provident quisquam iste, earum, modi nisi eveniet quo aut repellendus obcaecati asperiores minima, dignissimos illo deleniti excepturi rem cupiditate!</p>
+    <!-- Si yo quiero colocar una linea de separacion entre un texto de otro, utilizo la etiqueta hr -->
+    <hr>
+    <h2>Cuerpo dos</h2>
+    <!-- La etiqueta br nos ayuda a generar un salto de linea -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facilis asperiores vitae, <br> voluptatibus maiores reprehenderit aspernatur. Neque harum tempora error consectetur laudantium, doloremque asperiores aliquid illo, officiis sed modi tenetur.</p>
+    <!-- La etiqueta de hipervinculo nos ayuda para poder acceder a otro pagina dentro de nuestro
+    archivo HTML o incluso para navegar dentro de nuesta misma pagina web. La etiqueta comienza con la letra a acompañada de la propiedad href
+    Si queremos que el link se nos habra en otra pestaña agregamos tambien la propiedad target con el valor "_blank" -->
+    <a target="_blank" href="https://www.google.com.ar">Ir a google</a>
+    <!-- Si queremos mostrar al usuario imagenes usamos la etiqueta img -->
+    <img src="fotos/julian.jpg" width="400px" alt="julian">
+    <!-- La etiqueta de formulario se comienza con la abreviatura form -->
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="chancho" type="text" id="nombre" name="nombre" placeholder="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz"  type="text" id="apellido" name="apellido" placeholder="apellido">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea name="comentario" id="comentario" placeholder="comentario" cols="30" rows="10"></textarea>
+        <br>
+        <button type="button">enviar</button>
+    </form>
+
+</body>
+</html>
